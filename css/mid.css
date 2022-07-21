@@ -1,0 +1,224 @@
+*{
+  margin: 0%;
+  padding: 0%;
+}
+/* ------------------------- */
+.container{
+  background-color: #badbff;
+  height: 100%;
+}
+/* ------------------------- */
+.container .navbar{
+  width: 100%;
+  height: 80%;
+  background-color:#2a52be;
+}
+/* ------------------------- */
+.navbar .logo{
+  display: inline-flex;
+  margin-left: 40px;
+  margin-top: 30px; 
+  margin-bottom: 20px;
+  transition: all .5s ease;
+}
+
+.navbar .logo_picture:hover {
+  text-shadow: 1px 1px 1px black;
+  border-radius:2px;
+  transform: scale(1.25);
+  transition: all .5s ease;
+
+}
+/* ------------------------- */
+.navbar .logo a{
+  text-decoration: none;
+  font-size: 175%;
+  font-family: Roboto;
+  color: white;
+}
+
+/* ------------------------- */
+.navbar ul{
+  float: right;
+  margin-right: 20px;
+}
+/* ------------------------- */
+.navbar ul li{
+  list-style: none;
+  display:inline-block;
+  margin: 0 8px;
+  line-height: 80px;
+}
+/* ------------------------- */
+.navbar ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 6px 13px;
+  font-family:Roboto;
+  transition: all .5s ease;
+}
+/* ------------------------- */
+.navbar ul li a.active,
+.navbar ul li a:hover{
+  background-color:white;
+  border-radius: 8px;
+  color: #2a52be;
+  text-shadow: 1px 1px 1px black;
+}
+
+.navbar ul li a:hover {
+background-color:whitesmoke;
+color: #2a52be;
+transform: scale(1.25);
+text-shadow: 1px 1px 1px black;
+border-radius: 8px; 
+}
+
+
+
+/* ------------------------- */
+/* ------------------------- */
+/* ------------------------- */
+/* KARAKTER KARTLARI CSS */
+/* ------------------------- */
+/* ------------------------- */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #8c9eff;
+  }
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    float: left;
+    margin-top: 15px;
+    margin-right: 27px;
+    margin-left: 50px;
+    margin-bottom: 15px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #2a52be;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #2a52be;
+    color: white;
+    transform: rotateY(180deg);
+    text-shadow: 2px 2px 2px black;
+  }
+
+  .flip-card-back .arkaresim1 {
+    margin-top: -123px;
+  }
+
+
+  #social {
+    background-color: #2a52be;
+    color: white;
+    height: 55px;
+    width: 100%;
+    position: sticky; 
+    top: 50%;
+    z-index: 1;
+    font-size: 18px;
+    font-weight:bold;
+    text-align: center;
+    overflow: auto;
+}
+
+font {
+    float: left;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+span {
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+#social i {
+    margin-right: 10px;
+    font-size: 18px;
+    float: right;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: all .5s ease;
+}
+
+#social i:hover {
+   color: white;
+   transition: .3s ease;
+   transform: scale(1.25);
+   text-shadow: 2px 2px 4px grey;
+   cursor:pointer;
+}
+.whiteiconcolor {color: white;}
+
+.logo_picture{
+  width: 35%;
+  height: auto;
+}
+
+#myInput {
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
